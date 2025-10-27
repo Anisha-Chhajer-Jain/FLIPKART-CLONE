@@ -1,0 +1,383 @@
+* {
+  box-sizing: border-box;
+}
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: rgb(243, 240, 240);
+    }
+    .header {
+      background-color: #edeaea;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: black;
+    }
+
+    .login-cart{
+      color: black;
+    }
+    .search-bar {
+      flex: 1;
+      margin: 0 20px;
+      display: flex;
+      background-color: antiquewhite;
+    }
+
+    .search-bar input {
+      width: 90%;
+      padding: 8px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+
+    .search-bar button {
+      background-color: orange;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+      color: rgb(229, 229, 229);
+    }
+
+    .nav {
+      background-color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .nav a:hover {
+      color: #2874f0;
+    }
+    /* .first_image{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    } */
+
+    /* Product Section */
+    .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    
+    .smartphones {
+      background-color: white;
+      width: 200px;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .smartphones img {
+      width: 100%;
+      height: 150px;
+      object-fit: contain;
+    }
+    .smartphones h3 {
+      font-size: 16px;
+      margin: 10px 0 5px;
+    }
+    .smartphones p {
+      margin: 10px;
+    }
+
+    .deals {
+      background-color: white;
+      /* width: 700px; */
+      /* margin: 10px;
+      padding: 10px; */
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .deals img {
+      /* width: 100%; */
+      height: 210px;
+      object-fit: contain;
+    }
+
+    .deals-1 {
+      background-color: white;
+      /* width: 700px; */
+      /* margin: 10px;
+      padding: 10px; */
+      border-radius: 8px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .deals-1 img {
+      /* width: 100%; */
+      height: 247px;
+      object-fit: contain;
+    }
+
+    .appliances{
+      background-color: white;
+      /* width: 100%; */
+      margin: 10px;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .appliances img {
+    /* width: 100%; */
+      height: 150px;
+      object-fit: contain;
+    }
+
+
+
+     .haha-card {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 250px;
+    }
+
+    .haha-card img {
+      width: 80px;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .haha-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .haha-info h3 {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0;
+      color: #000;
+    }
+
+    .haha-info p {
+      font-size: 12px;
+      color: gray;
+      margin: 3px 0 0 0;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 15px;
+}
+
+/* --- Left and Middle Sections --- */
+.left-section, .middle-section {
+  background: white;
+  flex: 1.2;
+  padding: 15px;
+  border-radius: 8px;
+}
+h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.product-card {
+  background: #fff;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  transition: transform 0.2s ease;
+}
+.product-card:hover {
+  transform: scale(1.05);
+}
+.product-card img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+}
+.green-text {
+  color: green;
+  font-weight: bold;
+}
+/* --- Right Banner --- */
+.right-banner {
+  background: #fff;
+  flex: 1;
+  position: relative;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+.right-banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.banner-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  color: #2c3e50;
+  text-align: left;
+}
+.banner-text h2 {
+  font-size: 22px;
+}
+.banner-text button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border: none;
+  background: #2c5f4f;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.banner-text button:hover {
+  background: #1e4034;
+}
+.photos{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+}
+.photos img{
+    height: 125px;
+}
+    /* Footer */
+    .footer {
+      background-color: #172337;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+    }
+
+
+
+    /* ---------- Responsive for screens below 600px ---------- */
+  @media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .search-bar {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+  /* Navigation */
+  .nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+
+  .nav a {
+    margin: 8px;
+    font-size: 14px;
+  }
+
+  /* Product Section */
+  .products {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .smartphones {
+    width: 90%;
+  }
+
+  /* Main container (3-section layout) */
+  .main-container {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .left-section, 
+  .middle-section, 
+  .right-banner {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr; /* 1 column instead of 2 */
+  }
+
+  /* Photos section */
+  .photos {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .photos img {
+    height: 100px;
+    width: 80%;
+  }
+
+  /* Footer */
+  .footer {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .product-card img {
+  width: 60%;
+  height: 300px;
+  border-radius: 5px;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+}
